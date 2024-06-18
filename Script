@@ -1,0 +1,12 @@
+label start:
+    $ achievement.clear_all()
+    $ persistent._clear()
+    $ renpy.clear_retain()
+    $ renpy.restart_interaction() 
+    define config.autosave_on_choice = False 
+
+
+Example of how it is in script: 
+"You browse through the shop and spot a cute croissant-shaped keychain."
+  play sound "audio/sum/sum_se_cash.mp3" #Cash register sound
+    $ renpy.force_autosave() #put this where u want to autosave to be within the script
